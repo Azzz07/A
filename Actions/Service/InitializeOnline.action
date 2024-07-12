@@ -1,0 +1,10 @@
+{
+    "Service": "/A/Services/Aurl.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/A/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/A/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

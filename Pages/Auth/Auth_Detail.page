@@ -1,0 +1,69 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/A/Services/Aurl.service",
+		"EntitySet": "Books",
+		"QueryOptions": "$expand=author"
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "{author/address}",
+						"HeadlineText": "{author/name}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{author/name}",
+							"_Name": "KeyValue1",
+							"KeyName": "name",
+							"Visible": true
+						},
+						{
+							"Value": "{author/address}",
+							"_Name": "KeyValue2",
+							"KeyName": "address",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Auth_Detail",
+	"Caption": "Auth Detail",
+	"PrefersLargeCaption": true
+}

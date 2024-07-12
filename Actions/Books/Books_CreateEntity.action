@@ -1,0 +1,18 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/A/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/A/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "ID": "#Control:ID/#Value",
+        "title": "#Control:title/#Value",
+        "stock": "#Control:stock/#Value"
+    },
+    "Target": {
+        "EntitySet": "Books",
+        "Service": "/A/Services/Aurl.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}
